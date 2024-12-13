@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Entreprises / Gangs & Orgas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scrollbar-width: thin;
+            scrollbar-color: #4a5d7c #1a2435;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1a2435;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #4a5d7c, #627894);
+            border-radius: 4px;
+            border: 2px solid #1a2435;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(45deg, #627894, #7a8cA6);
+        }
+
+        body {
+            background: rgba(43, 42, 51, 0.95);
+            color: white;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            background: rgba(74, 93, 124, 0.3);
+            border-radius: 8px;
+        }
+
+        .recrutement-status {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: rgba(32, 34, 37, 0.6);
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        .status-open-global {
+            color: #ff5f57;
+            font-weight: bold;
+        }
+
+        details {
+            margin-bottom: 20px;
+            background: rgba(26, 36, 53, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 15px 20px;
+            cursor: pointer;
+            background: rgba(74, 93, 124, 0.6);
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        summary:hover {
+            background: rgba(98, 120, 148, 0.8);
+        }
+
+        .organization-card {
+            padding: 20px;
+            margin: 15px;
+            background: rgba(64, 68, 75, 0.6);
+            border-radius: 8px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .organization-card:hover {
+            transform: translateY(-5px);
+            background: rgba(74, 93, 124, 0.8);
+        }
+
+        .organization-card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .organization-status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .status-open {
+            background: rgba(0, 123, 255, 0.3);
+            color: #007bff;
+        }
+
+        .status-closed {
+            background: rgba(40, 167, 69, 0.3);
+            color: #28a745;
+        }
+
+        .status-free {
+            background: rgba(255, 193, 7, 0.3);
+            color: #ffc107;
+        }
+
+        .status-closed-red {
+            background: rgba(220, 53, 69, 0.3);
+            color: #dc3545;
+        }
+
+        .entreprises-list, .organizations-list, .gangs-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .organization-card {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Entreprises / Gangs & Orgas</h2>
+        
+        <div class="recrutement-status">
+            Recrutement Staff : <span class="status-open-global">Ouvert 2 places restantes , envoyez vos CV en Gdoc par ticket Discord</span>
+        </div>
+
+        <details>
+            <summary>Entreprises</summary>
+            <div class="entreprises-list">
+                <div class="organization-card">
+                    <h3>LSPD</h3>
+                    <p class="organization-status status-closed">A reprendre</p>
+                </div>
+                <div class="organization-card">
+                    <h3>EMS</h3>
+                    <p class="organization-status status-open">Recrutement ouvert</p>
+                </div>
+                <div class="organization-card">
+                    <h3>Benny's</h3>
+                    <p class="organization-status status-open">Recrutement ouvert</p>
+                </div>
+                <div class="organization-card">
+                    <h3>Luxury Motorsport</h3>
+                    <p class="organization-status status-closed">A reprendre</p>
+                </div>
+                <div class="organization-card">
+                    <h3>Uwu-Café</h3>
+                    <p class="organization-status status-closed">A reprendre</p>
+                </div>
+                <div class="organization-card">
+                    <h3>Pizzeria</h3>
+                    <p class="organization-status status-closed">A reprendre</p>
+                </div>
+                <div class="organization-card">
+                    <h3>Tabagiste</h3>
+                    <p class="organization-status status-closed">A reprendre</p>
+                </div>
+                <div class="organization-card">
+                    <h3>Taxi</h3>
+                    <p class="organization-status status-closed">A reprendre</p>
+                </div>
+                <div class="organization-card">
+                    <h3>MooreClub</h3>
+                    <p class="organization-status status-open">Recrutement ouvert</p>
+                </div>
+                <div class="organization-card">
+                    <h3>Vigneron</h3>
+                    <p class="organization-status status-closed">A reprendre</p>
+                </div>
+                <div class="organization-card">
+                    <h3>Agent Immobilier</h3>
+                    <p class="organization-status status-closed-red">Ne recrute pas</p>
+                </div>
+            </div>
+        </details>
+
+        <details>
+            <summary>Entreprises Intérimaires</summary>
+            <div class="entreprises-list">
+                <div class="organization-card">
+                    <h3>Bucheron</h3>
+                    <p class="organization-status status-free">Libre d'accès</p>
+                </div>
+                <div class="organization-card">
+                    <h3>Eboueur</h3>
+                    <p class="organization-status status-free">Libre d'accès</p>
+                </div>
+                <div class="organization-card">
+                    <h3>Agriculteur</h3>
+                    <p class="organization-status status-free">Libre d'accès</p>
+                </div>
+                <div class="organization-card">
+                    <h3>Recolte Fruits/Légumes</h3>
+                    <p class="organization-status status-free">Libre d'accès</p>
+                </div>
+            </div>
+        </details>
+
+        <details>
+            <summary>Organisations</summary>
+            <div class="organizations-list">
+                <div class="organization-card">
+                    <h3>Mafia Napolitaine</h3>
+                    <p class="organization-status status-closed">A reprendre</p>
+                </div>
+            </div>
+        </details>
+
+        <details>
+            <summary>Gangs</summary>
+            <div class="gangs-list">
+                <div class="organization-card">
+                    <h3>Pinks Panthers</h3>
+                    <p class="organization-status status-closed">A reprendre</p>
+                </div>
+            </div>
+        </details>
+    </div>
+</body>
+</html>
